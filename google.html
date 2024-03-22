@@ -32,19 +32,21 @@
         padding: 20px; /* 내부 여백 설정 */
         box-sizing: border-box; /* 테두리와 패딩을 포함한 크기 설정 */
     }
-
-    .plz {
-        margin-top: -20px;
+/* 검색칸 높이 */
+    .plz {  
+        margin-top: -19px;
     }
 
+
     .plzzz {
-        margin-top: -40px;
+        margin-top: -43px;
         margin-left: 375px;
     }
     
 
     /* 검색박스 */
     .search-box {
+        
         width: 320px; /* 너비 조정 */
         height: 40px; /* 높이 조정 */
         padding: 8px; /* 내부 여백 설정 */
@@ -71,7 +73,25 @@
         background-color:  rgb(231, 227, 227);
         width: 100%;
     }
-    
+
+    .plus{
+        margin-top: 25px;
+        margin-left: 140px;
+        color: rgb(185, 191, 234);
+        
+    }
+
+    .plus2{
+        margin-top: -133px;
+        margin-left: 280px;
+        color: rgb(185, 191, 234);
+        
+    }
+
+    .text-color {
+        color :black;
+    }
+
    
 
     </style>
@@ -102,11 +122,28 @@
         <div class="rectangle-box">
 
             <div class="plz">
+                <!-- <div class="ming">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/></svg>&nbsp;&nbsp;&nbsp;
-        
-            
-            <input type="text" class="search-box" placeholder="">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/></svg>&nbsp;&nbsp;&nbsp;</div> -->
+            </div >
+              
+        </form>
+            <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/day11.css">
+    </head>
+    <body>
+        <section>
+            <form action="https://www.google.com/search">
+                <input type="text" class="search-box" placeholder="" name="query" value="">
+        </form>
+    </section>
+    </body>
+    </html>
             
         
             <div class="plzzz">
@@ -127,30 +164,45 @@
             <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
         </svg></button></div>
-        </div>
- 
+
+
+        <div class="plus">
+            <button type="button" class="btn" onClick="location.href='http://127.0.0.1:5500/test.html'"><svg width="100px" height="55px" xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+            
+            
+        
+        </svg></button><p class="text-color">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;내 페이지</p></div plus1>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <div class="plus2">
+            <button class="btn"><svg width="100px" height="55px" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/></svg></button><br>
+            <p class="text-color">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;바로가기 추가</p></div plus2>
+          </svg>
+        </p>
+    </div>
+    </div>
     </div>
 </form>
 
-    
-        
-    
-    </p>
+
 
      <!-- 밑에 창 -->
      
     <footer class="bottom-element" >
         <br>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;대한민국<hr></p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;대한민국<hr></p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn">Google 정보</button>&nbsp;&nbsp;<button class="btn">대한민국</button>
             &nbsp;&nbsp;<button class="btn">비즈니스</button>&nbsp;&nbsp;<button class="btn">검색의 원리</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button class="btn" >개인정보처리방침</button>&nbsp;&nbsp;<button class="btn">약관</button>&nbsp;&nbsp;<button class="btn">설정</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-    
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="btn" >개인정보처리방침</button>&nbsp;&nbsp;<button class="btn">약관</button>&nbsp;&nbsp;<button class="btn">설정</button>&nbsp;&nbsp;</p>
+        </div>
     </footer>
         
     
