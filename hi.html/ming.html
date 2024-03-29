@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: black;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .p1, .p2 {
+            background-color: white;
+            width: 150px;
+            height: 30px;
+            margin-top: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            padding-left: 5px; /* 텍스트와 체크박스 간격 조절 */
+        }
+
+        .Fiter {
+            color: white;
+            margin-bottom: 20px; /* Fiter 요소와의 간격 조절 */
+        }
+
+        .red-box, .non {
+            background-color: gray;
+            width: 150px;
+            padding: 10px;
+            border-radius: 15px;
+            color: white;
+            text-align: center;
+            margin-top: 10px; /* 다음 요소와의 간격 조절 */
+        }
+
+        .btn1, .btn {
+            background-color: red;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="Fiter">Fiter</p>
+        <div class="p1">
+            <input type="checkbox">
+            Non-followers 
+        </div>
+        <div class="p2">
+            <input type="checkbox">
+            private 
+        </div>
+        <div class="red-box">
+            <button class="btn1">UNFOLLOW(0)</button>
+        </div>
+        <!-- <div class="non">
+            <button class="btn">Non-whitelisted</button> -->
+        </div>
+    </div>
+</body>
+</html>
